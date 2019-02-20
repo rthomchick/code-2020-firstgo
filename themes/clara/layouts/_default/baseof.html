@@ -1,0 +1,11 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+{{ block "main" . }}
+
+{{.Content}}
+
+{{end}}
+
+{{ partial "footer.html" . }}

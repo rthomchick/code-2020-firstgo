@@ -1,0 +1,32 @@
+
+  <div class="margin-sides-24">
+
+    <div class="max-width">
+
+    <section class="clr-row border-bottom padding-bottom-24">
+
+        <div class="clr-col-4">
+
+          <h3>Operations</h3>
+
+        </div>
+
+        <div class="clr-col-8 padding-top-24">
+
+          <ul class="list-unstyled">
+
+              {{ range where .Sections "Params.type" "operation" }}
+
+              <li><a href="{{ .Permalink }}">{{ .Title  |  upper  }}</a>&nbsp;&nbsp;&nbsp;{{.Description}}</li>
+
+              {{ end }}
+
+          </ul>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>

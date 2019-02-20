@@ -1,0 +1,35 @@
+{{ if .Sections }}
+
+  <div class="margin-sides-24 margin-top-24">
+
+    <div class="max-width">
+
+    <section class="clr-row border-bottom padding-bottom-24">
+
+        <div class="clr-col-4">
+
+            <h2 class="padding-bottom-24">Subtopics</h2>
+
+        </div>
+
+        <div class="clr-col-8 padding-top-24">
+
+          <ul class="list-unstyled">
+
+            {{ range .Sections }}
+
+            <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+            {{ end }}
+
+          </ul>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+{{ end }}

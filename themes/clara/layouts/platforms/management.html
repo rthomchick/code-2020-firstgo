@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+{{ partial "breadcrumb.html" . }}
+
+{{ partial "banner.html" . }}
+
+<div class="margin-sides-24">
+
+  <div class="max-width">
+
+    {{ range where .Site.Pages "Params.platform" "vSphere Management SDK" }}
+
+    <section class="clr-row border-bottom padding-bottom-24">
+
+      <div class="clr-col-4">
+
+        <h3><a class="black-linktext" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+
+      </div>
+
+      <div class="clr-col-8 padding-top-24">
+
+        <ul class="list-unstyled twocol">
+
+            {{ range .Sections}}
+
+            <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+            {{ end }}
+
+        </ul>
+
+      </div>
+
+    </section>
+
+    {{ end }}
+
+  </div>
+
+</div>
+
+{{ end }}

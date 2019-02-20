@@ -1,0 +1,41 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "vSphere Developer Center"
+theme = "clara"
+preserveTaxonomyNames = true
+
+[menu]
+
+  [[menu.main]]
+  identifier = "platforms"
+  name = "Platforms"
+  url = "/platforms/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "reference"
+  name = "Reference"
+  url = "/reference/"
+  weight = 2
+
+  [[menu.main]]
+  identifier = "guides"
+  name = "Guides"
+  url = "/guides/"
+  weight = 3
+
+  [[menu.main]]
+  identifier = "samples"
+  name = "Samples"
+  url = "/samples/"
+  weight = 4
+
+  [[menu.main]]
+  identifier = "videos"
+  name = "Videos"
+  url = "/videos/"
+  weight = 5
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

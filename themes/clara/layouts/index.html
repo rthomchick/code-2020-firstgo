@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ partial "breadcrumb.html" . }}
+
+{{ partial "banner.html" . }}
+
+<div class="margin-sides-24">
+
+  <div class="max-width">
+
+    {{ partial "platform-browser.html" . }}
+
+    {{ partial "type-browser.html" . }}
+
+  </div>
+
+</div>
+
+{{ end }}

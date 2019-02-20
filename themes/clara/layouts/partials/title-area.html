@@ -1,0 +1,21 @@
+<section class="bg-fafafa">
+
+      <div class="margin-sides-24">
+
+        <div class="max-width">
+
+          <div class="capitalize p2">{{.Type}}</div>
+
+          <h1>{{.Title}}</h1>
+
+          <div class="p3">{{upper .Params.api_path}}</div>
+
+          <h5>{{.Description}}</h5>
+
+          <div class="p3">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
+
+        </div>
+
+      </div>
+
+</section>

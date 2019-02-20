@@ -1,0 +1,23 @@
+<!-- This is the right sidebar content area on the page with local navigation to peer pages. -->
+
+<div class="local-nav">
+
+  <ul class="local-nav-list">
+
+    <li class="local-nav-list-header">Browse {{.Section}}</li>
+
+    {{ range .Parent.Sections }}
+
+      {{ if ne $ . }}
+
+      <li>
+        <a href="{{.RelPermalink}}">{{- .Title -}}</a>
+      </li>
+
+      {{ end }}
+
+    {{end}}
+
+    </ul>
+
+</div>

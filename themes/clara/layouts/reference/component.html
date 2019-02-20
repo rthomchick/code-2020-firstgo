@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+  {{ partial "breadcrumb.html" . }}
+
+  {{ partial "title-area.html" . }}
+
+  <div class="margin-sides-24">
+
+    <div class="max-width">
+
+      {{.Content}}
+
+    </div>
+
+  </div>
+
+  {{ partial "package-indexer.html" . }}
+
+  {{ partial "service-indexer.html" . }}
+
+  {{ partial "structure-indexer.html" . }}
+
+  {{ partial "sibling-indexer.html" . }}
+
+{{ end }}

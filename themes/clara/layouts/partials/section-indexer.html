@@ -1,0 +1,19 @@
+<div class="margin-sides-24">
+
+  <div class="max-width">
+
+    {{ range .Sections }}
+
+    <section class="clr-row border-bottom padding-bottom-24">
+
+      {{ partial "indexer/section-heading.html" . }}
+
+      {{ partial "indexer/section-content.html" . }}
+
+    </section>
+
+    {{ end }}
+
+  </div>
+
+</div>

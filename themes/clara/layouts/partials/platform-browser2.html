@@ -1,0 +1,68 @@
+<section class="clr-row border-bottom padding-top-24 padding-bottom-24">
+  <div class="clr-col-4">
+
+    <a href="vsphere-automation"><h3>vSphere Automation SDK</h3></a>
+
+  </div>
+
+  <div class="clr-col-8">
+
+    <ul class="list-unstyled twocol">
+
+        {{ range where .Site.Pages "Params.platform" "vSphere Automation SDK" }}
+
+        <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+        {{ end }}
+
+    </ul>
+
+  </div>
+
+</section>
+
+<section class="clr-row border-bottom padding-top-24 padding-bottom-24">
+  <div class="clr-col-4">
+
+    <a href="vsphere-client"><h3>vSphere Client SDK</h3></a>
+
+  </div>
+
+  <div class="clr-col-8">
+
+    <ul class="list-unstyled twocol">
+
+        {{ range where .Site.Pages "Params.platform" "vSphere Client SDK" }}
+
+        <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+        {{ end }}
+
+    </ul>
+
+  </div>
+
+</section>
+
+<section class="clr-row border-bottom padding-top-24 padding-bottom-24">
+  <div class="clr-col-4">
+
+    <a href="vsphere-management"><h3>vSphere Management SDK</h3></a>
+
+  </div>
+
+  <div class="clr-col-8">
+
+    <ul class="list-unstyled twocol">
+
+        {{ range where .Site.Pages "Params.platform" "vSphere Management SDK" }}
+
+        <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+        {{ end }}
+
+    </ul>
+
+  </div>
+
+</section>

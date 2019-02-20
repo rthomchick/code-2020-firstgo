@@ -1,0 +1,152 @@
+/* --------------- Styles for Breadcrumb --------------- */
+
+.breadcrumb-container {
+  background-color:white; border-bottom:1px solid #cccccc;
+}
+
+ul.breadcrumbs {
+   -webkit-padding-start:0; padding-top: .6rem; padding-bottom: .6rem;
+}
+
+ul.breadcrumbs li+li:before {
+    color: #555555; content: ">\00a0 \00a0";
+}
+
+ul.breadcrumbs a:visited {
+  color: #006699;
+}
+
+.inline {
+  display:inline;
+}
+
+/* --------------- Misc. Styles for Body --------------- */
+
+.capitalize {
+  text-transform:capitalize;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.max-width {
+  margin:auto;
+  max-width: 1440px;
+}
+
+.more-spacing {
+  line-height: 1.4rem;
+}
+
+/* --------------- Borders --------------- */
+
+.border-top {
+  border-top:1px solid #f1f1f1;
+}
+
+.border-bottom {
+  border-bottom:1px solid #eeeeee;
+}
+
+/* --------------- Padding --------------- */
+
+.padding-top-24 {
+  padding-top:24px;
+}
+
+.padding-top-48 {
+  padding-top:48px;
+}
+
+.padding-right-24 {
+  padding-right:24px;
+}
+
+.padding-right-48 {
+   padding-right:48px;
+}
+
+.padding-bottom-24 {
+  padding-bottom:24px;
+}
+
+.padding-left-24 {
+   padding-left:24px;
+}
+
+.padding-left-72 {
+   padding-left:72px;
+}
+
+/* --------------- Margins --------------- */
+
+.margin-24 {
+   margin:24px;
+}
+
+.margin-top-24 {
+   margin-top:24px;
+}
+
+.margin-bottom-24 {
+   margin-bottom:24px;
+}
+
+.margin-sides-24 {
+   margin-right:24px;
+   margin-left:24px;
+}
+
+.margin-top-72 {
+   margin-top:72px;
+}
+
+.margin-bottom-72 {
+   margin-bottom:72px;
+}
+
+
+/* --------------- Styles for link text --------------- */
+
+.black-linktext {
+  color: black !important;
+}
+
+.white-linktext {
+  color: white !important;
+}
+
+/* --------------- Styles for 2-Col text box --------------- */
+
+.twocol {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+}
+
+.twocol-li {
+  flex:1 1 auto;
+  width:40%;
+  margin-right: 48px;
+}
+
+/* --------------- Styles for banner --------------- */
+
+.banner {
+  background-color:#f1f1f1;
+  padding-top:24px;
+  padding-bottom:24px;
+  border-bottom:1px solid #cccccc;
+}
+
+.banner-compact {
+  background-color:#f1f1f1;
+  border-bottom:1px solid #cccccc;
+}
+
+/* -------------- Styles for title area ----------- */
+
+.bg-fafafa {
+  background-color:#fafafa; padding:1px 0 1px 0;
+}

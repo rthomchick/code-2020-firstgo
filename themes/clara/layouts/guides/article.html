@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+  {{ partial "breadcrumb.html" . }}
+
+  {{ partial "title-area.html" . }}
+
+  <div class="margin-sides-24 margin-bottom-24">
+
+    <div class="max-width">
+
+      {{.Content}}
+
+    </div>
+
+  </div>
+
+<div class="bg-fafafa margin-top-24">
+
+    {{partial "subtopic-indexer.html" . }}
+
+    {{ partial "sibling-indexer.html" . }}
+
+</div>
+
+
+  {{end}}

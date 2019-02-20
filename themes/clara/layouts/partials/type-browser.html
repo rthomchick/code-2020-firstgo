@@ -1,0 +1,47 @@
+<h2 class="border-bottom padding-bottom-24 padding-top-24">Browse by Content Type</h2>
+
+<section class="clr-row border-bottom padding-top-24 padding-bottom-24">
+  <div class="clr-col-4">
+
+    <a class="black-linktext" href="/reference"><h3>API Reference</h3></a>
+
+  </div>
+
+  <div class="clr-col-8">
+
+    <ul class="list-unstyled twocol">
+
+        {{ range where .Site.Pages "Params.type" "apidoc" }}
+
+        <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+        {{ end }}
+
+    </ul>
+
+  </div>
+
+</section>
+
+<section class="clr-row border-bottom padding-top-24 padding-bottom-24">
+  <div class="clr-col-4">
+
+    <a class="black-linktext" href="/reference"><h3>Programming Guides</h3></a>
+
+  </div>
+
+  <div class="clr-col-8">
+
+    <ul class="list-unstyled twocol">
+
+        {{ range where .Site.Pages "Params.type" "guide" }}
+
+        <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+        {{ end }}
+
+    </ul>
+
+  </div>
+
+</section>

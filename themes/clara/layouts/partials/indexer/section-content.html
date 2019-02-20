@@ -1,0 +1,13 @@
+<div class="clr-col-8 padding-top-24">
+
+  <ul class="list-unstyled twocol">
+
+      {{ range .Sections }}
+
+      <li class="twocol-li"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+
+      {{ end }}
+
+  </ul>
+
+</div>

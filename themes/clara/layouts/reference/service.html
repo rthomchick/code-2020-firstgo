@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+{{ partial "breadcrumb.html" . }}
+
+{{ partial "title-area.html" . }}
+
+<div class="margin-sides-24">
+
+  <div class="max-width">
+
+    {{.Content}}
+
+  </div>
+
+</div>
+
+{{ partial "operation-indexer.html" . }}
+
+<div class="bg-fafafa">
+
+{{ partial "sibling-indexer.html" . }}
+
+</div>
+
+{{ end }}

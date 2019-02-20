@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+{{ partial "breadcrumb.html" . }}
+
+{{ partial "title-area.html" . }}
+
+<div class="margin-sides-24">
+
+  <div class="max-width">
+
+    <h3>Request</h3>
+
+    <p><span style="font-weight:bold;">{{.Params.api_method  |  upper }}</span> {{.Params.api_request}}</p>
+
+    <h3>Response</h3>
+
+    <p>{{.Params.api_response}}</p>
+
+    <p>Return Type: {{.Params.api_return_type}}</p>
+
+    {{partial "error-table.html" . }}
+
+  </div>
+
+</div>
+
+<div class="bg-fafafa margin-top-24">
+
+{{ partial "sibling-indexer.html" . }}
+
+</div>
+
+{{ end }}
